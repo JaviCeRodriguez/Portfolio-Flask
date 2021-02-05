@@ -1,2 +1,18 @@
 # Portfolio-Flask
 Portfolio personal hecho con Flask + HTML + Tailwind CSS + Firebase
+
+## Instalación de virtualenv
+1) Instalamos la librería: `pip install virtualenv`
+2) Creamos el entorno virtual: `virtualenv env`
+3) Lo activamos: `env\Scripts\activate`
+4) Para desactivar: `deactivate`
+
+## Instalacion de librerías
+Si tenemos preparado un archivo `requeriments.txt`, instalamos las versiones de ahí: `pip install -r requirements.txt`.
+Caso contrario, instalaremos a mano:
+`pip install flask`
+ó `pip install flask==1.0.1`
+Si necesitamos actualizar una librería: `pip install flask -U`
+
+## requeriments.txt
+Podemos crear este archivo y actualizarlo con `pip freeze > requirements.txt`
