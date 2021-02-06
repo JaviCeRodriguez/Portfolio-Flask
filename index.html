@@ -27,9 +27,9 @@
                         lg:my-0">Search user</button>
     </section>
     <!-- Cuerpo principal -->
-    <main class="my-10">
+    <main class="my-6">
         <!-- Info del user -->
-        <section class="border border-gray-500 bg-gray-800 rounded-md p-4 my-4 mx-auto w-3/4
+        <section class="border border-gray-500 bg-gray-800 rounded-md p-4 my-2 mx-auto w-3/4
                         flex flex-col items-center
                         lg:flex-row lg: justify-evenly">
             <figure>
@@ -37,8 +37,8 @@
                     class="w-32 rounded-full
                         md:w-48 lg:w-64 lg:mx-10">
             </figure>
-            <div class="p-10 mt-6 w-full
-                lg:w-3/5">
+            <div class="p-2 mt-2 w-full
+                lg:w-3/5 lg:mt-6 lg:p-1">
                 <p class="m-2"><label class="font-medium">&emsp;Username: </label> Scorpion</p>
                 <p class="m-2"><label class="font-medium">&emsp;Bio: </label> Por el honor, luchaba a muerte en la arena contra feroces
                     contrincantes hasta la muerte. Pero luego comprendí lo valioso que es la vida y ahora me hago unos
@@ -50,11 +50,16 @@
             </div>
         </section>
         <!-- User inexistente -->
-        <section class="border border-gray-500 bg-gray-800 rounded-md p-4 my-4 mx-auto w-3/4">
-            <h3>404 not found! :(</h3>
-            <p>I don't found info. Do you want to search again? ^</p>
+        <section class="border border-gray-500 bg-gray-800 rounded-md p-4 my-4 mx-auto w-3/4
+            flex flex-col items-center justify-evenly">
+            <h3 class="text-xl font-bold mb-2
+                md:text-2xl">❌ 404 not found! 😿</h3>
+            <p class="text-center text-sm
+                md:text-md">I don't found info. Do you want to search again? ⬆️</p>
         </section>
     </main>
-    <footer class="text-center text-white text-xs mt-10"><em>Page made with many :fecmate:</em></footer>
+    <footer class="text-center text-white text-xs">
+        <p class="flex justify-center text-center p-4">Page made with many <img src="./img/Mate_FEC_16x16.png" alt="mate"></p>
+    </footer>
 </body>
 </html>
