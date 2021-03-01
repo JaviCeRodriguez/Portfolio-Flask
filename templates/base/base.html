@@ -18,18 +18,14 @@
     <section class="border border-gray-500 bg-gray-800 rounded-md p-4 mt-10 mb-4 mx-auto w-3/4
                     flex justify-evenly items-center flex-col
                     lg:flex-row">
-        <!-- <div class="mx-2 my-auto">
-            <label class="font-medium mr-2">User:</label>
-            {% from "_macro.html" import render_field %}
-                <input type="text" placeholder="Username..." name="username"
-                        class="mx-auto px-4 py-0.5 bg-gray-900 border border-gray-500 rounded" />
-        </div>
-        <button class="mx-2 my-2 px-4 py-1 bg-green-600 hover:bg-green-500 rounded-md font-medium
-                        lg:my-0">Search user</button> -->
         {% from "_macro.html" import render_field %}
-        <form method="POST">
-            {{ render_field(form.username) }}
-            <button type="submit">Search profile</button>
+        <form method="POST" action="/" class="mx-2 my-auto">
+            {{ render_field(form.username, class="mx-auto px-4 py-0.5 bg-gray-900 border border-gray-500 rounded") }}
+            <button type="submit"
+                class="mx-2 my-2 px-4 py-1 bg-green-600 hover:bg-green-500 rounded-md font-medium text-white
+                lg:my-0">
+                Search profile
+            </button>
         </form>
     </section>
     <!-- Cuerpo principal -->
