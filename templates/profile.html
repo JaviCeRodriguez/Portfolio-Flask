@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+
+{% block user %}
+	<!-- Info del user -->
+	<section class="border border-gray-500 bg-gray-800 rounded-md p-4 my-2 mx-auto w-3/4
+						flex flex-col items-center
+						lg:flex-row lg: justify-evenly">
+			<figure>
+				<img src="{{ userData[0] }}" alt="Usuario"
+					class="w-32 rounded-full
+						md:w-48 lg:w-64 lg:mx-10">
+			</figure>
+			<div class="p-2 mt-2 w-full
+				lg:w-3/5 lg:mt-6 lg:p-1">
+				<p class="m-2"><label class="font-medium">&emsp;Username: </label> {{ userData[1] }}</p>
+				<p class="m-2"><label class="font-medium">&emsp;Bio: </label> {{ userData[2] }}</p>
+				<p class="m-2"><label class="font-medium">&emsp;Website: </label>
+					<a href="{{ userData[3] }}" target="_blank" rel="noopener noreferrer"
+						class="cursor-pointer hover:text-blue-400">{{ userData[3] }}</a></p>
+				<p class="m-2"><label class="font-medium">&emsp;Repositories: </label>{{ userData[4] }}</p>
+			</div>
+	</section>
+{% endblock %}
