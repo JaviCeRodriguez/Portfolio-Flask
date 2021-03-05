@@ -1,0 +1,12 @@
+{% block nav %}
+    <nav class="flex justify-center h-12 bg-blue-500">
+        <ul class="flex justify-around items-center w-full h-full font-semibold">
+            <a href="{{ url_for('home') }}"> <li class="px-2 py-1 rounded-md
+                hover:text-white">Home</li></a>
+            <a href="{{ url_for('projects') }}"> <li class="px-2 py-1 rounded-md
+                hover:text-white">Proyects</li></a>
+            <a href="{{ url_for('github') }}"> <li class="px-2 py-1 rounded-md
+                hover:text-white">GitHub</li></a>
+        </ul>
+    </nav>
+{% endblock %}

@@ -12,9 +12,3 @@ class API():
     def jsonPrint(obj):
         getData = [obj['avatar_url'], obj['login'], obj['bio'], obj['blog'], obj['public_repos']]
         return getData
-
-# response = API.requestGet('JaviCeRodriguez')
-# if response.status_code != 200:
-#     print('GET {}'.format(response.status_code))
-# else:
-#     API.jsonPrint(response.json())
