@@ -1,5 +1,17 @@
 {% extends 'base/base.html' %}
 
 {% block github %}
-    <h1>Perfil GitHub</h1>
+    <section class="mx-4 my-6 pb-16 flex flex-col">
+        <h1 class="text-2xl self-center font-semibold">Perfil GitHub</h1>
+        <img src="{{ response.avatar_url }}" alt="Photo" class="rounded-full w-52 mt-6 mb-2 self-center">
+        <p><label class='font-bold'>User:</label> {{ response.login }}</p>
+        <p><label class='font-bold'>Name:</label> {{ response.name }}</p>
+        <p><label class='font-bold'>Location:</label> {{ response.location }}</p>
+        <p><label class='font-bold'>Bio:</label> {{ response.bio }}</p>
+        <p><label class='font-bold'>Followers:</label> {{ response.followers }}</p>
+        <p><label class='font-bold'>Following:</label> {{ response.following }}</p>
+        <p><label class='font-bold'>Public Repositories:</label> {{ response.public_repos }}</p>
+        <p><label class='font-bold'>Twitter:</label> {{ response.twitter_username }}</p>
+    </section>
+    <!-- <p>{{ response }}</p> -->
 {% endblock %}

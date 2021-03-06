@@ -12,11 +12,13 @@
     <!-- Title -->
     <title>Desafios | Javier Rodriguez</title>
 </head>
-<body>
-    {% include "base/nav.html" %} {# Navbar #}
-    {% block home %}{% endblock %} {# Home #}
-    {% block projects %}{% endblock %} {# Projects #}
-    {% block github %}{% endblock %} {# GitHub #}
-    {% include "base/footer.html" %} {# Footer #}
+<body class="h-screen bg-gray-200">
+    <main class="h-full relative">
+        {% include "base/nav.html" %} {# Navbar #}
+        {% block home %}{% endblock %} {# Home #}
+        {% block projects %}{% endblock %} {# Projects #}
+        {% block github %}{% endblock %} {# GitHub #}
+        {% include "base/footer.html" %} {# Footer #}
+    </main>
 </body>
 </html>
