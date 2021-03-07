@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import requests
+import requests, json
 
 app = Flask(__name__)
 
@@ -9,7 +9,9 @@ def home():
 
 @app.route('/projects')
 def projects():
-  return render_template('projects.html')
+  with open('./projects.json', 'rb') as f:
+    data = json.load(f, encoding='utf-8')
+  return render_template('projects.html', data = data)
 
 @app.route('/github')
 def github():

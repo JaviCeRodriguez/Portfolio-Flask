@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Burguer Quiz",
+        "stack": [
+            ["HTML", "bg-yellow-600 border-yellow-800"],
+            ["CSS", "bg-blue-300 border-blue-500"],
+            ["JavaScript", "bg-yellow-400 border-yellow-600"]
+            ],
+        "description": "Catálogo de hamburguesas, con un pequeño Quiz para encontrar tu hamburguesa perfecta.",
+        "image": "https://javier-rodriguez.vercel.app/img/proyectos/burger-quiz.png",
+        "url": "https://burger-quiz.vercel.app/"
+    },
+    {
+        "title": "GitHub Profile Finder",
+        "stack": [
+            ["HTML", "bg-yellow-600 border-yellow-800"],
+            ["CSS", "bg-blue-300 border-blue-500"],
+            ["JavaScript", "bg-yellow-400 border-yellow-600"],
+            ["API", "bg-indigo-500 border-indigo-700"]
+            ],
+        "description": "Buscador de perfiles en GitHub, conociendo solo el nombre de usuario. Se utiliza la API de GitHub.",
+        "image": "https://javier-rodriguez.vercel.app/img/proyectos/GitHubAPI.png",
+        "url": "https://javier-rodriguez.vercel.app/proyectos/GitHubAPI/index.html"
+    },
+    {
+        "title": "Bordes de pizza",
+        "stack": [
+            ["HTML", "bg-yellow-600 border-yellow-800"],
+            ["CSS", "bg-blue-300 border-blue-500"],
+            ["Bootstrap", "bg-purple-700 border-purple-900"]
+            ],
+        "description": "Landing page de casa de comidas ficticia para curso de Le Wagon.",
+        "image": "https://javier-rodriguez.vercel.app/img/proyectos/bordes-de-pizza.png",
+        "url": "https://bordes-de-pizza.vercel.app/"
+    }
+]
