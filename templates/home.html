@@ -1,15 +1,18 @@
 {% extends 'base/base.html' %}
 
 {% block home %}
-    <section class="flex flex-col items-center my-6">
-        <h1 class="text-2xl font-semibold">Hola! 🧉</h1>
-        <p class="my-4 mx-4 text-md text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Optio laborum harum tenetur architecto? Reiciendis similique sit incidunt fugit. 
-            Provident tempora non quisquam placeat cum qui beatae enim labore temporibus reprehenderit.
-        </p>
-        <img src="https://i.kym-cdn.com/entries/icons/original/000/021/807/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg" alt="Photo"
-            class="w-11/12">
-        
-    </section>    
-
+    <section class="flex flex-col items-center my-4 pb-10 h-4/5
+        lg:flex-row lg:justify-evenly lg:items-center lg:container lg:mx-auto">
+        <div class="md:w-9/12 lg:w-6/12">
+            <h1 class="text-2xl font-semibold text-center lg:text-3xl lg:font-bold lg:my-10">Hola! 🧉</h1>
+            <p class="my-2 mx-4 text-md text-center lg:text-lg">En esta Web App mostraré mis proyectos y algoritmos resueltos.
+                Uso principalmente <b>Python</b> y <b>JavaScript</b> para el desarrollo de los algoritmos. En los proyectos utilizo <b>React.js</b>,
+                <b>Flask</b>, <b>Django</b>, <b>Tailwind CSS</b>, <b>Sass</b> y demás frameworks y librerías.
+            </p>
+            <p class="my-2 mx-4 text-md text-center lg:text-lg">También podrás ver breve información sobre mí en la sección de <b>GitHub</b>!
+            </p>
+        </div>
+        <img src="../static/img/photo.jpg" alt="Photo"
+            class="rounded-sm w-11/12 md:w-8/12 lg:w-6/12">
+    </section>
 {% endblock %}

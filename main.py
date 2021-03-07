@@ -19,3 +19,9 @@ def github():
 
 if __name__ == '__main__':
   app.run()
+
+# Ejecutar estos comandos:
+# > set FLASK_APP=main.py
+# > set FLASK_ENV=DEVELOPMENT
+# > set FLASK_DEBUG=1
+# > flask run
